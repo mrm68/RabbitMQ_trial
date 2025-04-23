@@ -4,7 +4,6 @@ import time
 
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
-
 # Declare direct exchange
 channel.exchange_declare(exchange='direct_logs', exchange_type='direct')
 
